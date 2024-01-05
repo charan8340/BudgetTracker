@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color:rgb(0, 0, 33);
+            color:rgb(255, 255, 255);
+            font-family: sans-serif;
+        }
+        main hr {
+            border: 0px;
+            background-color: rgb(175, 175, 240);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height:80px;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul {
+            display:flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            font-size: 1.03rem;
+            color: rgb(175, 175, 240);
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 90px 0;
+            align-items: center;
+        }
+        .firstsection > div {
+            width : 30%;
+        }
+        .leftsection {
+            font-size: 3rem;
+            
+        }
+        .rightsection img{
+            width: 80%;
+        }
+        .purple {
+            color: rgb(189, 135, 239);
+        }
+        .gray {
+            color: gray;
+            font-size: 0.8rem;
+        }
+        #element {
+            color: rgb(189, 135, 239);
+        }
+        
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="left">BUDGET TRACKER</div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Calculator</a></li>
+                <li><a href="card.html">Allocator</a></li>
+                <li><a href="guide.html">Guide</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection"><span class="purple">BUDGET TRACKER</span>
+                <div>a financial tool</div>
+                <div>for better financing</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="f:\project main\bg.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="f:\rajesh\project\code.jquery.com_jquery-3.7.0.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['increase savings', 'decrease expenses'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
